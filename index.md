@@ -10,12 +10,12 @@ language: "en"     # lowercase two-letter ISO language code such as "fr" (see ht
 latitude: "51.52"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-0.13"       # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "Feb 13-15, 2024"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "09:30 - 13:00 GMT"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
+humantime: "09:30 - 13:00 GMT, (17:00 Day 3)"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2024-02-13     # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2024-02-15        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Sarah Jaffa", "Heather Kelly"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["?", "?"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["s.jaffa@ucl.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+instructor: ["Samantha Ahern, Day 1", "Heather Kelly, Camilla Harris and Daniel Chau - Days 2 & 3"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["?, Day 1", "Kai Yu, Day 3"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["arc.teaching@ucl.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
