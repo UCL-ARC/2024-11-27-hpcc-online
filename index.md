@@ -399,6 +399,236 @@ please preview your site before committing, and make sure to run
   You must apply for access to Myriad in advance of the course via the web form at the following link: <a href="https://www.rc.ucl.ac.uk/docs/Account_Services/">Research Computing account services</a>. Please fill in the request as soon as you register as it can take a couple of days for accounts to be activated.
   In addition, you will need an up-to-date web browser.
 </p>
+
+<div id="shell">
+  <h3>The Bash Shell</h3>
+  <p>
+    Bash is a commonly-used shell that gives you the power to do
+    tasks more quickly.
+  </p>
+
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#shell-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#shell-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#shell-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="shell-windows">
+        <ol>
+          <li>Download the Git for Windows <a href="https://gitforwindows.org/">installer</a>.</li>
+          <li>Run the installer and follow the steps below:
+            <ol>
+              
+              <li>
+                Click on "Next" four times (two times if you've previously
+                installed Git).  You don't need to change anything
+                in the Information, location, components, and start menu screens.
+              </li>
+              <li>
+                <strong>
+                  From the dropdown menu, "Choosing the default editor used by Git", select "Use the Nano editor by default" (NOTE: you will need to scroll <emph>up</emph> to find it) and click on "Next".
+                </strong>
+              </li>
+              
+              <li>
+                On the page that says "Adjusting the name of the initial branch in new repositories", ensure that
+		"Let Git decide" is selected. This will ensure the highest level of compatibility for our lessons.
+		     
+              </li>
+              
+              <li>
+                Ensure that "Git from the command line and also from 3rd-party software" is selected and
+                click on "Next". (If you don't do this Git Bash will not work properly, requiring you to
+                remove the Git Bash installation, re-run the installer and to select the "Git from the
+                command line and also from 3rd-party software" option.)
+              </li>
+              
+ 	      <li>
+	      Select "Use bundled OpenSSH".
+	      </li>
+              
+              <li>
+		Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".
+	      </li>
+              
+              
+              <li>
+                Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
+              </li>
+              
+              <li>
+                <strong>
+                  Ensure that "Use Windows' default console window" is selected and click on "Next".
+                </strong>
+              </li>
+              
+              <li>
+		Ensure that "Default (fast-forward or merge) is selected and click "Next"
+              </li>
+              <li>
+		Ensure that "Git Credential Manager" is selected and click on "Next".
+              </li>
+              <li>
+		Ensure that "Enable file system caching" is selected and click on "Next".
+              </li>
+              
+              <li>Click on "Install".</li>
+              
+              
+              
+              <li>Click on "Finish" or "Next".</li>
+            </ol>
+          </li>
+          <li>
+            If your "HOME" environment variable is not set (or you don't know what this is):
+            <ol>
+              <li>Open command prompt (Open Start Menu then type <code>cmd</code> and press <kbd>Enter</kbd>)</li>
+              <li>
+                Type the following line into the command prompt window exactly as shown:
+                <p><code>setx HOME "%USERPROFILE%"</code></p>
+              </li>
+              <li>Press <kbd>Enter</kbd>, you should see <code>SUCCESS: Specified value was saved.</code></li>
+              <li>Quit command prompt by typing <code>exit</code> then pressing <kbd>Enter</kbd></li>
+            </ol>
+	  </li>
+        </ol>
+        <p>This will provide you with both Git and Bash in the Git Bash program.</p>
+        <h4>Video Tutorial</h4>
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+        <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;rel=0" class="yt-frame" allowfullscreen=""></iframe>
+        </div>
+        </div>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="shell-macos">
+        <p>
+          The default shell in some versions of macOS is Bash, and
+	  Bash is available in all versions, so no need to install anything.
+	  You access Bash from the Terminal (found in
+	  <code>/Applications/Utilities</code>).
+          See the Git installation <a href="#shell-macos-video-tutorial">video tutorial</a>
+          for an example on how to open the Terminal.
+          You may want to keep Terminal in your dock for this workshop.
+        </p>
+        <p>
+            To see if your default shell is Bash type <code>echo $SHELL</code>
+            in Terminal and press the <kbd>Return</kbd> key. If the message
+            printed does not end with '/bash' then your default is something
+            else and you can run Bash by typing <code>bash</code>
+        </p>
+        <p>
+          If you want to change your default shell, see <a href="https://support.apple.com/en-au/HT208050" rel="noopener">
+          this Apple Support article</a> and follow the instructions on "How to change your default shell".
+        </p>
+        <h4 id="shell-macos-video-tutorial">Video Tutorial</h4>
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+        <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/9LQhwETCdwY?modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;rel=0" class="yt-frame" allowfullscreen=""></iframe>
+        </div>
+        </div>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="shell-linux">
+        <p>
+          The default shell is usually Bash and there is usually no need to
+          install anything.
+        </p>
+        <p>
+          To see if your default shell is Bash type <code>echo $SHELL</code> in
+          a terminal and press the <kbd>Enter</kbd> key. If the message printed
+          does not end with '/bash' then your default is something else and you
+          can run Bash by typing <code>bash</code>.
+        </p>
+      </article>
+    </div>
+  </div>
+</div>
+
+<div id="ssh">
+    <h3>SSH</h3>
+    <p>
+        SSH is a tool that allows us to connect to and use a remote computer as our own.
+        Please follow the directions below to install an SSH client for your system.
+    </p>
+    <div>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a data-os="windows" href="#ssh-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+            <li role="presentation"><a data-os="macos" href="#ssh-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+            <li role="presentation"><a data-os="linux" href="#ssh-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+        </ul>
+        <div class="tab-content">
+            <article role="tabpanel" class="tab-pane active" id="ssh-windows">
+                <p>
+                    Install MobaXterm from <a href="http://mobaxterm.mobatek.net" target="_blank">http://mobaxterm.mobatek.net</a>.
+                    Be sure to get the <i>Home edition</i> (Installer edition).
+                </p>
+            </article>
+            <article role="tabpanel" class="tab-pane" id="ssh-macos">
+                <p>
+                    Although macOS comes with SSH pre-installed, you will need to install <a href="https://www.xquartz.org" target="_blank">XQuartz</a> to enable graphical support.
+                    Note that you must restart your computer to complete the installation.
+                </p>
+            </article>
+            <article role="tabpanel" class="tab-pane" id="ssh-linux">
+                <p>
+                    Linux users do not need to install anything, you will already have an SSH client.
+                </p>
+            </article>
+        </div>
+    </div>
+</div>
+<div id="editor">
+  <h3>Text Editor</h3>
+
+  <p>
+    When you're writing code, it's nice to have a text editor that is
+    optimized for writing code, with features like automatic
+    color-coding of key words. The default text editor on macOS and
+    Linux is usually set to Vim, which is not famous for being
+    intuitive. If you accidentally find yourself stuck in it, hit
+    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd>
+    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to
+    return to the shell.
+  </p>
+
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#editor-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#editor-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#editor-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="editor-windows">
+        <p>
+          nano is a basic editor and the default that instructors use in the workshop.
+          It is installed along with Git.
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="editor-macos">
+        <p>
+          nano is a basic editor and the default that instructors use in the workshop.
+          See the Git installation <a href="#editor-macos-video-tutorial">video tutorial</a>
+          for an example on how to open nano.
+          It should be pre-installed.
+        </p>
+        <h4 id="editor-macos-video-tutorial">Video Tutorial</h4>
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+        <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/9LQhwETCdwY?modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;rel=0" class="yt-frame" allowfullscreen=""></iframe>
+        </div>
+        </div>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="editor-linux">
+        <p>
+          nano is a basic editor and the default that instructors use in the workshop.
+          It should be pre-installed.
+        </p>
+      </article>
+    </div>
+  </div>
+</div>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
