@@ -341,9 +341,6 @@ The lesson taught in this workshop is being piloted and a precise schedule is ye
 
 <hr/>
 
-<h2 id="syllabus">Syllabus</h2>
-
-{% include custom-syllabus.html %}
 
 
 {% comment %}
