@@ -260,7 +260,11 @@ Edit the text to match who can attend the workshop. For instance:
     <strong>Who can attend?:</strong>
     This workshop is open to researchers, staff and students at UCL. You will need an account on UCL's High Performance Computing cluster "Myriad" in order to complete the course.
 </p>
-
+<p id="booking">
+  <strong>Booking:</strong>
+ Book via Ticket Tailor: <a href="https://buytickets.at/uclarc/1129290">Workshop: Introduction to Higher Performance Computing at UCL</a> 
+ Please use your UCL email address when booking.
+</p>
 
 <hr/>
 
