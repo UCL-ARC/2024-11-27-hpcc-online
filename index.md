@@ -386,6 +386,7 @@ please preview your site before committing, and make sure to run
 
 <h2 id="setup">Setup</h2>
 
+
 <p>
   To participate in a
   {% if site.carpentry == "swc" %}
@@ -428,6 +429,8 @@ These are the installation instructions for the tools used
 during the workshop.
 {% endcomment %}
 
+
+
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
 {% elsif site.carpentry == "dc" %}
@@ -435,7 +438,5 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
+{% include custom_setup.html %}
 {% endif %}
