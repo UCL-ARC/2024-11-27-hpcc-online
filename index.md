@@ -341,6 +341,34 @@ The lesson taught in this workshop is being piloted and a precise schedule is ye
 
 <hr/>
 
+<h2 id="syllabus">Syllabus</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <h3 id="syllabus-shell">The Unix Shell</h3>
+        <ul>
+            <li>Why Use a Cluster?</li>
+            <li>Connecting to a remote HPC system</li>
+            <li>Moving around and looking at things</li>
+            <li>Writing and reading files</li>
+            <li>Wildcards and pipes</li>
+            <li>Scripts, variables, and loops</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h3 id="syllabus-hpc">Introduction to High-Performance Computing</h3>
+        <ul>
+            <li>Working on a remote HPC system</li>
+            <li>Scheduling jobs</li>
+            <li>Accessing software</li>
+            <li>Transferring files</li>
+            <li>Using resources effectively</li>
+            <li>Using shared resources responsibly</li>
+        </ul>
+    </div>
+</div>
+
+<hr />
 
 
 {% comment %}
