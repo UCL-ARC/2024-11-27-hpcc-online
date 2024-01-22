@@ -347,12 +347,13 @@ The lesson taught in this workshop is being piloted and a precise schedule is ye
     <div class="col-md-6">
         <h3 id="syllabus-shell">The Unix Shell</h3>
         <ul>
-            <li>Why Use a Cluster?</li>
-            <li>Connecting to a remote HPC system</li>
-            <li>Moving around and looking at things</li>
-            <li>Writing and reading files</li>
-            <li>Wildcards and pipes</li>
-            <li>Scripts, variables, and loops</li>
+            <li>Introducing the Shell</li>
+            <li>Navigating Files and Directories</li>
+            <li>Working with Files and Directories</li>
+            <li>Pipes and Filters</li>
+            <li>Loops</li>
+            <li>Shell scripts</li>
+            <li>Finding Things</li>
         </ul>
     </div>
     <div class="col-md-6">
