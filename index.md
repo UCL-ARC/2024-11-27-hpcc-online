@@ -335,18 +335,6 @@ The lesson taught in this workshop is being piloted and a precise schedule is ye
 
 <div class="row">
     <div class="col-md-6">
-        <h3 id="syllabus-shell">The Unix Shell</h3>
-        <ul>
-            <li>Introducing the Shell</li>
-            <li>Navigating Files and Directories</li>
-            <li>Working with Files and Directories</li>
-            <li>Pipes and Filters</li>
-            <li>Loops</li>
-            <li>Shell scripts</li>
-            <li>Finding Things</li>
-        </ul>
-    </div>
-    <div class="col-md-6">
         <h3 id="syllabus-hpc">Introduction to High-Performance Computing</h3>
         <ul>
             <li>Working on a remote HPC system</li>
